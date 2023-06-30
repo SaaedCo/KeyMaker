@@ -32,6 +32,8 @@
             this.GenerateKeyPairAndCsrButton = new System.Windows.Forms.Button();
             this.CheckCsrButton = new System.Windows.Forms.Button();
             this.IranTaxButton = new System.Windows.Forms.Button();
+            this.SourceLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // GenerateKeyPairAndCsrButton
@@ -66,11 +68,36 @@
             this.IranTaxButton.UseVisualStyleBackColor = true;
             this.IranTaxButton.Click += new System.EventHandler(this.IranTaxButton_Click);
             // 
+            // SourceLinkLabel
+            // 
+            this.SourceLinkLabel.AutoSize = true;
+            this.SourceLinkLabel.Location = new System.Drawing.Point(12, 165);
+            this.SourceLinkLabel.Name = "SourceLinkLabel";
+            this.SourceLinkLabel.Size = new System.Drawing.Size(62, 13);
+            this.SourceLinkLabel.TabIndex = 2;
+            this.SourceLinkLabel.TabStop = true;
+            this.SourceLinkLabel.Text = "Source URL";
+            this.SourceLinkLabel.VisitedLinkColor = System.Drawing.Color.Blue;
+            this.SourceLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.SourceLinkLabel_LinkClicked);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(266, 165);
+            this.label1.Name = "label1";
+            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label1.Size = new System.Drawing.Size(183, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "مشاهده‌ی کد منبع این ابزار در GitHub:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(461, 161);
+            this.ClientSize = new System.Drawing.Size(461, 187);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.SourceLinkLabel);
             this.Controls.Add(this.IranTaxButton);
             this.Controls.Add(this.CheckCsrButton);
             this.Controls.Add(this.GenerateKeyPairAndCsrButton);
@@ -84,6 +111,7 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -92,6 +120,8 @@
         private System.Windows.Forms.Button GenerateKeyPairAndCsrButton;
         private System.Windows.Forms.Button CheckCsrButton;
         private System.Windows.Forms.Button IranTaxButton;
+        private System.Windows.Forms.LinkLabel SourceLinkLabel;
+        private System.Windows.Forms.Label label1;
     }
 }
 

@@ -26,7 +26,7 @@ namespace SaaedCo.KeyMaker.Forms
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            
+            SourceLinkLabel.Text = ConstantValues.SOURCE_URL;
         }
 
         private void GenerateKeyPairAndCsrButtonButton_Click(object sender, EventArgs e)
@@ -42,6 +42,11 @@ namespace SaaedCo.KeyMaker.Forms
         private void IranTaxButton_Click(object sender, EventArgs e)
         {
             Process.Start(ConstantValues.IRAN_TAX_URL_IN_SAAED_WEBSITE);
+        }
+
+        private void SourceLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start(ConstantValues.SOURCE_URL);
         }
     }
 }
