@@ -144,7 +144,7 @@
             // 
             this.LegalCityNameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.LegalCityNameTextBox.Location = new System.Drawing.Point(17, 275);
+            this.LegalCityNameTextBox.Location = new System.Drawing.Point(17, 248);
             this.LegalCityNameTextBox.Name = "LegalCityNameTextBox";
             this.LegalCityNameTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.LegalCityNameTextBox.Size = new System.Drawing.Size(345, 21);
@@ -155,7 +155,7 @@
             // 
             this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(368, 278);
+            this.label25.Location = new System.Drawing.Point(368, 251);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(119, 13);
             this.label25.TabIndex = 9;
@@ -165,7 +165,7 @@
             // 
             this.LegalProvinceNameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.LegalProvinceNameTextBox.Location = new System.Drawing.Point(17, 248);
+            this.LegalProvinceNameTextBox.Location = new System.Drawing.Point(17, 221);
             this.LegalProvinceNameTextBox.Name = "LegalProvinceNameTextBox";
             this.LegalProvinceNameTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.LegalProvinceNameTextBox.Size = new System.Drawing.Size(345, 21);
@@ -176,7 +176,7 @@
             // 
             this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(368, 251);
+            this.label24.Location = new System.Drawing.Point(368, 224);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(100, 13);
             this.label24.TabIndex = 9;
@@ -187,7 +187,7 @@
             this.LegalEmailTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LegalEmailTextBox.Enabled = false;
-            this.LegalEmailTextBox.Location = new System.Drawing.Point(17, 221);
+            this.LegalEmailTextBox.Location = new System.Drawing.Point(17, 275);
             this.LegalEmailTextBox.Name = "LegalEmailTextBox";
             this.LegalEmailTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.LegalEmailTextBox.Size = new System.Drawing.Size(345, 21);
@@ -303,7 +303,7 @@
             // 
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(368, 224);
+            this.label8.Location = new System.Drawing.Point(368, 278);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(144, 13);
             this.label8.TabIndex = 5;
