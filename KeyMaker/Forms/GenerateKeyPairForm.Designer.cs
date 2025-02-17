@@ -32,6 +32,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GenerateKeyPairForm));
             this.label1 = new System.Windows.Forms.Label();
             this.LegalGroupBox = new System.Windows.Forms.GroupBox();
+            this.LegalCityNameTextBox = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.LegalProvinceNameTextBox = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
             this.LegalEmailTextBox = new System.Windows.Forms.TextBox();
             this.LegalOrgUnit3TextBox = new System.Windows.Forms.TextBox();
             this.LegalOrgUnit2TextBox = new System.Windows.Forms.TextBox();
@@ -106,6 +110,12 @@
             // 
             // LegalGroupBox
             // 
+            this.LegalGroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.LegalGroupBox.Controls.Add(this.LegalCityNameTextBox);
+            this.LegalGroupBox.Controls.Add(this.label25);
+            this.LegalGroupBox.Controls.Add(this.LegalProvinceNameTextBox);
+            this.LegalGroupBox.Controls.Add(this.label24);
             this.LegalGroupBox.Controls.Add(this.LegalEmailTextBox);
             this.LegalGroupBox.Controls.Add(this.LegalOrgUnit3TextBox);
             this.LegalGroupBox.Controls.Add(this.LegalOrgUnit2TextBox);
@@ -125,10 +135,52 @@
             this.LegalGroupBox.Location = new System.Drawing.Point(12, 104);
             this.LegalGroupBox.Name = "LegalGroupBox";
             this.LegalGroupBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LegalGroupBox.Size = new System.Drawing.Size(551, 257);
+            this.LegalGroupBox.Size = new System.Drawing.Size(551, 312);
             this.LegalGroupBox.TabIndex = 2;
             this.LegalGroupBox.TabStop = false;
             this.LegalGroupBox.Text = "اطلاعات شخصیت حقوقی";
+            // 
+            // LegalCityNameTextBox
+            // 
+            this.LegalCityNameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.LegalCityNameTextBox.Location = new System.Drawing.Point(17, 275);
+            this.LegalCityNameTextBox.Name = "LegalCityNameTextBox";
+            this.LegalCityNameTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.LegalCityNameTextBox.Size = new System.Drawing.Size(345, 21);
+            this.LegalCityNameTextBox.TabIndex = 10;
+            this.LegalCityNameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label25
+            // 
+            this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(368, 278);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(119, 13);
+            this.label25.TabIndex = 9;
+            this.label25.Text = "نام شهرستان (فارسی):";
+            // 
+            // LegalProvinceNameTextBox
+            // 
+            this.LegalProvinceNameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.LegalProvinceNameTextBox.Location = new System.Drawing.Point(17, 248);
+            this.LegalProvinceNameTextBox.Name = "LegalProvinceNameTextBox";
+            this.LegalProvinceNameTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.LegalProvinceNameTextBox.Size = new System.Drawing.Size(345, 21);
+            this.LegalProvinceNameTextBox.TabIndex = 9;
+            this.LegalProvinceNameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label24
+            // 
+            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(368, 251);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(100, 13);
+            this.label24.TabIndex = 9;
+            this.label24.Text = "نام استان (فارسی):";
             // 
             // LegalEmailTextBox
             // 
@@ -303,10 +355,11 @@
             // 
             // OkButton
             // 
-            this.OkButton.Location = new System.Drawing.Point(426, 367);
+            this.OkButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.OkButton.Location = new System.Drawing.Point(426, 422);
             this.OkButton.Name = "OkButton";
             this.OkButton.Size = new System.Drawing.Size(137, 23);
-            this.OkButton.TabIndex = 15;
+            this.OkButton.TabIndex = 11;
             this.OkButton.Text = "تأیید";
             this.OkButton.UseVisualStyleBackColor = true;
             this.OkButton.Click += new System.EventHandler(this.OkButton_Click);
@@ -639,12 +692,13 @@
             // 
             // MainMenuLinkLabel
             // 
+            this.MainMenuLinkLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.MainMenuLinkLabel.AutoSize = true;
             this.MainMenuLinkLabel.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.MainMenuLinkLabel.Location = new System.Drawing.Point(12, 372);
+            this.MainMenuLinkLabel.Location = new System.Drawing.Point(12, 427);
             this.MainMenuLinkLabel.Name = "MainMenuLinkLabel";
             this.MainMenuLinkLabel.Size = new System.Drawing.Size(65, 13);
-            this.MainMenuLinkLabel.TabIndex = 17;
+            this.MainMenuLinkLabel.TabIndex = 13;
             this.MainMenuLinkLabel.TabStop = true;
             this.MainMenuLinkLabel.Text = "سایر امکانات";
             this.MainMenuLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.MainMenuLinkLabel_LinkClicked);
@@ -653,10 +707,10 @@
             // 
             this.IranTaxLinkLabel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.IranTaxLinkLabel.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.IranTaxLinkLabel.Location = new System.Drawing.Point(0, 393);
+            this.IranTaxLinkLabel.Location = new System.Drawing.Point(0, 448);
             this.IranTaxLinkLabel.Name = "IranTaxLinkLabel";
             this.IranTaxLinkLabel.Size = new System.Drawing.Size(574, 31);
-            this.IranTaxLinkLabel.TabIndex = 18;
+            this.IranTaxLinkLabel.TabIndex = 14;
             this.IranTaxLinkLabel.TabStop = true;
             this.IranTaxLinkLabel.Text = "نرم‌افزار حسابداری و ارتباط با سامانه‌ی مؤدیان (ساعدحساب)";
             this.IranTaxLinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -689,12 +743,13 @@
             // 
             // OpenSslSettingsLinkLabel
             // 
+            this.OpenSslSettingsLinkLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.OpenSslSettingsLinkLabel.AutoSize = true;
             this.OpenSslSettingsLinkLabel.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.OpenSslSettingsLinkLabel.Location = new System.Drawing.Point(329, 372);
+            this.OpenSslSettingsLinkLabel.Location = new System.Drawing.Point(329, 427);
             this.OpenSslSettingsLinkLabel.Name = "OpenSslSettingsLinkLabel";
             this.OpenSslSettingsLinkLabel.Size = new System.Drawing.Size(91, 13);
-            this.OpenSslSettingsLinkLabel.TabIndex = 16;
+            this.OpenSslSettingsLinkLabel.TabIndex = 12;
             this.OpenSslSettingsLinkLabel.TabStop = true;
             this.OpenSslSettingsLinkLabel.Text = "تنظیمات OpenSSL";
             this.OpenSslSettingsLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OpenSslSettingsLinkLabel_LinkClicked);
@@ -702,7 +757,7 @@
             // GenerateKeyPairForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(574, 424);
+            this.ClientSize = new System.Drawing.Size(574, 479);
             this.Controls.Add(this.SaaedPictureBox);
             this.Controls.Add(this.SaaedHesabPictureBox);
             this.Controls.Add(this.IranTaxLinkLabel);
@@ -795,5 +850,9 @@
         private System.Windows.Forms.PictureBox SaaedPictureBox;
         private System.Windows.Forms.PictureBox SaaedHesabPictureBox;
         private System.Windows.Forms.LinkLabel OpenSslSettingsLinkLabel;
+        private System.Windows.Forms.TextBox LegalCityNameTextBox;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox LegalProvinceNameTextBox;
+        private System.Windows.Forms.Label label24;
     }
 }

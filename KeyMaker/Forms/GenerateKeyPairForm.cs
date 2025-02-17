@@ -124,10 +124,12 @@ namespace SaaedCo.KeyMaker.Forms
                 OrgUnit1 = LegalOrgUnit1TextBox.Text,
                 OrgUnit2 = LegalOrgUnit2TextBox.Text,
                 OrgUnit3 = LegalOrgUnit3TextBox.Text,
-                Email = LegalEmailTextBox.Text
+                Email = LegalEmailTextBox.Text,
+                PersianProvinceName = LegalProvinceNameTextBox.Text,
+                PersianCityName = LegalCityNameTextBox.Text
             };
 
-            openSsl.GenerateCsrAndKeies(personInfo, folderBrowserDialog.SelectedPath, GetFileNameForPerson(PRIVATE_KEY_FILE_NAME), GetFileNameForPerson(PUBLIC_KEY_FILE_NAME), GetFileNameForPerson(CSR_FILE_NAME));
+           openSsl.GenerateCsrAndKeies(personInfo, folderBrowserDialog.SelectedPath, GetFileNameForPerson(PRIVATE_KEY_FILE_NAME), GetFileNameForPerson(PUBLIC_KEY_FILE_NAME), GetFileNameForPerson(CSR_FILE_NAME));
         }
 
         private bool CheckExistingFiles()
@@ -218,6 +220,8 @@ namespace SaaedCo.KeyMaker.Forms
             isValid = CheckRequiredTextBox(LegalPersianNameTextBox, "نام") && isValid;
             isValid = CheckRequiredTextBox(LegalEnglishNameTextBox, "نام") && isValid;
             isValid = CheckRequiredTextBox(NationalIdentityTextBox, "شناسه‌ی ملی") && isValid;
+            isValid = CheckRequiredTextBox(LegalProvinceNameTextBox, "نام استان") && isValid;
+            isValid = CheckRequiredTextBox(LegalCityNameTextBox, "نام شهرستان") && isValid;
 
             if (!string.IsNullOrEmpty(NationalIdentityTextBox.Text) && !Regex.IsMatch(NationalIdentityTextBox.Text, @"\d{11}"))
             {

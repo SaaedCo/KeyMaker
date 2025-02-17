@@ -36,6 +36,12 @@ distinguished_name=dn
             if (!string.IsNullOrWhiteSpace(personInfo.Email))
                 result.AppendLine($"E={personInfo.Email}");
 
+            if (!string.IsNullOrWhiteSpace(personInfo.PersianProvinceName))
+                result.AppendLine($"ST={personInfo.PersianProvinceName}");
+
+            if (!string.IsNullOrWhiteSpace(personInfo.PersianCityName))
+                result.AppendLine($"L={personInfo.PersianCityName}");
+
             return result.ToString();
         }
 
@@ -52,9 +58,9 @@ distinguished_name=dn
             result.AppendLine($"O={personInfo.PersonType.GetConfigValue()}");
             result.AppendLine($"CN={personInfo.EnglishFirstName} {personInfo.EnglishLastName} [Sign]");
             result.AppendLine($"serialNumber={personInfo.NationalCode}");
-            result.AppendLine($"G={personInfo.PersianFirstName}");
+            result.AppendLine($"GN={personInfo.PersianFirstName}");
             result.AppendLine($"SN={personInfo.PersianLastName}");
-            result.AppendLine($"S={personInfo.PersianProvinceName}");
+            result.AppendLine($"ST={personInfo.PersianProvinceName}");
             result.AppendLine($"L={personInfo.PersianCityName}");
             result.AppendLine("C=IR");
 

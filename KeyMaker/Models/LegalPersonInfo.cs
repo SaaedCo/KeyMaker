@@ -12,6 +12,8 @@ namespace SaaedCo.KeyMaker.Models
         public string OrgUnit2 { get; set; }
         public string OrgUnit3 { get; set; }
         public string Email { get; set; }
+        public string PersianProvinceName { get; set; }
+        public string PersianCityName { get; set; }
 
         public LegalPersonInfo()
         {
@@ -26,7 +28,9 @@ namespace SaaedCo.KeyMaker.Models
             string orgUnit1,
             string orgUnit2,
             string orgUnit3,
-            string email)
+            string email,
+            string provinceName,
+            string cityName)
         {
             PersonType = personType;
             EnglishName = englishName;
@@ -36,6 +40,8 @@ namespace SaaedCo.KeyMaker.Models
             OrgUnit2 = orgUnit2;
             OrgUnit3 = orgUnit3;
             Email = email;
+            PersianProvinceName = provinceName;
+            PersianCityName = cityName;
         }
     }
 }
